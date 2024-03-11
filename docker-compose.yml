@@ -1,0 +1,21 @@
+version: "3.8"
+
+
+services:
+  minecraft:
+    image: marctv/minecraft-papermc-server:latest
+    ports:
+      - "25565:25565/tcp"
+      - "25565:25565/udp"
+    # restart: always
+    environment:
+      EULA: "TRUE"
+      MEMORYSIZE: "1G"
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+    volumes:
+      - ./data:/data:rw
