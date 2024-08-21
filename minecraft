@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+
+function help {
+    echo "help"
+}
+
+function backup {
+    tar cf backup.tar.gz data/world*
+}
+
+function restore {
+    tar --extract -f backup.tar.gz --overwrite
+}
+
+function setup {
+    cp server.properties data/
+    cp whitelist.json data/
+    rsync plugins data/plugins
+}
+
+function build {
+    echo "Building Minecraft Server..."
+    docker-compose build --no-cache 
+}
+
+
+function start {
+    echo "Starting Minecraft Server..."
+    docker-compose up -d
+}
+
+function stop {
+    echo "Stopping Minecraft Server and cleaning up..."
+    docker-compose down --rmi all --remove-orphans
+}
+
+function attach {
+    echo "Attaching to Minecraft..."
+    echo "Ctrl-C stops minecraft and exits"
+    echo "Ctrl-P Ctrl-Q only exits"
+    echo ""
+    echo "Type \"help\" for help."
+    docker attach minecraft;
+}
+
+if declare -f "$1" > /dev/null
+then
+    "$@"
+else
+    stop
+    build
+    start
+    attach
+fi

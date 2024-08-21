@@ -1,0 +1,31 @@
+version: "3.8"
+
+
+services:
+  minecraft:
+    build:
+      target: server
+
+    container_name: minecraft
+
+    ports:
+      - "25566:25566/tcp"
+      - "25566:25566/udp"
+
+    environment:
+      PAPER_VERSION: 1.21.1
+      PAPER_BUILD: 33
+      EULA: "TRUE"
+      MEMORYSIZE: "1G"
+
+    stdin_open: true
+    tty: true
+
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+
+    volumes:
+      - ./data:/data:rw
+
