@@ -14,9 +14,9 @@ function restore {
 }
 
 function setup {
-    cp server.properties data/
-    cp whitelist.json data/
-    rsync plugins data/plugins
+    cp config/server.properties data/
+    cp config/whitelist.json data/
+    rsync config/plugins data/plugins
 }
 
 function build {

@@ -9,8 +9,8 @@ services:
     container_name: minecraft
 
     ports:
-      - "25566:25566/tcp"
-      - "25566:25566/udp"
+      - "25565:25565/tcp"
+      - "25565:25565/udp"
 
     environment:
       PAPER_VERSION: 1.21.1
