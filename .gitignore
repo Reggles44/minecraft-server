@@ -6,10 +6,13 @@
 !docker-compose.yml
 !.gitignore
 
+!data
+!plugins
+
 # server config
-!/data/eula.txt
-!/data/whitelist.json
-!/data/server.properties
+!data/eula.txt
+!data/whitelist.json
+!data/server.properties
 
 # Essentials
 !plugins/Essentials/config.yml
@@ -17,7 +20,6 @@
 !plugins/Essentials/items.yml
 !plugins/Essentials/kits.yml
 !plugins/Essentials/motd.yml
-!plugins/Essentials/tpr.yml
 !plugins/Essentials/tpr.yml
 
 # LuckPerms
