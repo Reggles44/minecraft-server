@@ -10,7 +10,6 @@
 !plugins
 
 # server config
-!data/eula.txt
 !data/whitelist.json
 !data/server.properties
 
