@@ -12,5 +12,5 @@
 !data/server.properties
 
 # plugins
-!plugins/
+!plugins/*
 
