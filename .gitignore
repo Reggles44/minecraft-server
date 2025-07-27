@@ -5,37 +5,22 @@
 !minecraft
 !docker-compose.yml
 !.gitignore
-
-
-
-# server config
 !data
 !data/whitelist.json
 !data/server.properties
-
-
-# plugins
-!plugins
-
-# Essentials
-!plugins/Essentials
-!plugins/Essentials/config.yml
-!plugins/Essentials/custom_items.yml
-!plugins/Essentials/items.yml
-!plugins/Essentials/kits.yml
-!plugins/Essentials/motd.yml
-!plugins/Essentials/tpr.yml
-
-# LuckPerms
-!plugins/LuckPerms
-!plugins/LuckPerms/config.yml
-
-# MiniMOTD
-!plugins/MiniMOTD
-!plugins/MiniMOTD/main.conf
-!plugins/MiniMOTD/plugin_settings.conf
-
-# TreeCuter
-!plugins/TreeCuter
-!plugins/TreeCuter/config.yml
+!data/plugins
+!data/plugins/Essentials
+!data/plugins/Essentials/config.yml
+!data/plugins/Essentials/custom_items.yml
+!data/plugins/Essentials/items.yml
+!data/plugins/Essentials/kits.yml
+!data/plugins/Essentials/motd.yml
+!data/plugins/Essentials/tpr.yml
+!data/plugins/LuckPerms
+!data/plugins/LuckPerms/config.yml
+!data/plugins/MiniMOTD
+!data/plugins/MiniMOTD/main.conf
+!data/plugins/MiniMOTD/plugin_settings.conf
+!data/plugins/TreeCuter
+!data/plugins/TreeCuter/config.yml
 
