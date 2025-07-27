@@ -2,8 +2,8 @@
 *
 
 # but...
-!docker-compose.yaml
 !minecraft
+!docker-compose.yml
 !.gitignore
 
 # server config
