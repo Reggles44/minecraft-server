@@ -13,18 +13,6 @@ function restore {
     tar --extract -f backup.tar.gz --overwrite
 }
 
-function setup {
-    cp config/server.properties data/
-    cp config/whitelist.json data/
-    rsync config/plugins data/plugins
-}
-
-function build {
-    echo "Building Minecraft Server..."
-    docker-compose build --no-cache 
-}
-
-
 function start {
     echo "Starting Minecraft Server..."
     docker-compose up -d

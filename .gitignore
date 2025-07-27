@@ -10,5 +10,5 @@ data/eula.txt
 data/server.properties
 data/whitelist.json
 
-plugins/*
 # plugins
+plugins/*
