@@ -6,9 +6,9 @@
 docker-compose.yaml
 
 # server config
-data/eula.txt
-data/server.properties
-data/whitelist.json
+./data/eula.txt
+./data/server.properties
+./data/whitelist.json
 
 # plugins
-/plugins/*
+./plugins/*
