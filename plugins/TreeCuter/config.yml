@@ -1,0 +1,154 @@
+#-------------------------------------------------#
+#   _______             _____      _              #
+#  |__   __|           / ____|    | |             #
+#     | |_ __ ___  ___| |    _   _| |_ ___ _ __   #
+#     | | '__/ _ \/ _ \ |   | | | | __/ _ \ '__|  #
+#     | | | |  __/  __/ |___| |_| | ||  __/ |     #
+#     |_|_|  \___|\___|\_____\__,_|\__\___|_|     #
+#                                                 #
+#-------------------------------------------------#
+
+# TreeCuter by Norbit4
+
+# github: https://github.com/Norbit4
+# wiki: https://github.com/Norbit4/TreeCuter/
+
+# If you like the plugin, support me with a positive opinion, thanks! <3
+
+#---------------------------------------#
+#               [Config]                #
+#---------------------------------------#
+
+messages:
+  permission: '&c&l» &7You do not have permission to use this command!'
+  console: '&c&l» &7Only players can use this command!'
+  help:
+    - '&8[&m------------------------------------------------]'
+    - ''
+    - ' &8&l» &8/&atreecuter reload &8- &7reload plugin!'
+    - ' &8&l» &8/&atreecuter get &8- &7get tool!'
+    - ' &8&l» &8/&atreecuter toggle &8- &7on/off!'
+    - ''
+    - '&8[&m------------------------------------------------]'
+  reload:
+    start: '&e&l» &7Reloading plugin...'
+    end: '&a&l» &7Plugin reloaded!'
+  tool:
+    get: '&a&l» &7You got tool!'
+    disabled: '&c&l» &7Tool is disabled! Enable it in config!'
+  toggle:
+    enable: '&a&l» &7Enabled cutting down trees!'
+    disable: '&c&l» &7Disabled cutting down trees!'
+
+# if true, only players with permission can cut down trees
+use-permissions: false
+permission: 'treecuter.use'
+
+# max blocks to cut at once
+# only important for GIANT custom trees!
+max-blocks: 150
+# min blocks to cut at once
+min-blocks: 4
+
+# if true, the player must hold shift to cut down trees
+shift-mining: true # true <- recommended
+
+# apply mining fatigue effect when player is cutting down trees
+# works only with shift-mining enabled!
+mining-effect:
+  enable: true # true <- recommended
+  default-level: 1
+
+# if true, blocks that have been cut off, will glow
+
+# [!]                                                                                                               [!]
+# [!] GLOWING - SUPPORTS ONLY PAPER OR FORKS VERSIONS: 1.17.1, 1.18.2, 1.19.4, 1.20.2, 1.20.4, 1.20.5, 1.20.6, 1.21 [!]
+# [!]                                                                                                               [!]                                                                                    [!]
+
+glowing-blocks: true
+# colors: black, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray,
+#         dark_gray, blue, green, aqua, red, magenta, light_purple, yellow, white
+glowing-color: 'yellow'
+
+# [!]                                                                                                               [!]
+# [!] GLOWING - SUPPORTS ONLY PAPER OR FORKS VERSIONS: 1.17.1, 1.18.2, 1.19.4, 1.20.2, 1.20.4, 1.20.5, 1.20.6, 1.21 [!]
+# [!]                                                                                                               [!]
+
+# cut blocks automatically go to player inventory
+items-to-inventory: false
+
+# automatically plants saplings that lie on the ground!
+auto-plant: false
+
+custom-tool:
+  enable: false
+  # material support ItemsAdder, when you use item from ItemsAdder, you must use 'ia:<ID>' instead of 'MATERIAL'
+  # example: 'ia:example_item_id'
+  material: 'NETHERITE_AXE'
+  name: '&c&lGOD AXE'
+
+# blocked worlds
+block-worlds:
+  - 'example_world'
+
+# speed up leaf decay
+leaves:
+  enable: true
+  # amount of leaves decay every 3 ticks
+  decay-amount: 2
+
+accept-tools:
+  - 'WOODEN_AXE'
+  - 'STONE_AXE'
+  - 'IRON_AXE'
+  - 'GOLDEN_AXE'
+  - 'DIAMOND_AXE'
+  - 'NETHERITE_AXE'
+
+accept-wood-blocks:
+  - 'OAK_LOG'
+  - 'SPRUCE_LOG'
+  - 'BIRCH_LOG'
+  - 'JUNGLE_LOG'
+  - 'ACACIA_LOG'
+  - 'DARK_OAK_LOG'
+  - 'MANGROVE_LOG'
+  - 'MANGROVE_ROOTS'
+  - 'CHERRY_LOG'
+  - 'OAK_WOOD'
+  - 'SPRUCE_WOOD'
+  - 'BIRCH_WOOD'
+  - 'JUNGLE_WOOD'
+  - 'ACACIA_WOOD'
+  - 'DARK_OAK_WOOD'
+  - 'MANGROVE_WOOD'
+  - 'CHERRY_WOOD'
+
+accept-leaves-blocks:
+  - 'OAK_LEAVES'
+  - 'SPRUCE_LEAVES'
+  - 'BIRCH_LEAVES'
+  - 'JUNGLE_LEAVES'
+  - 'ACACIA_LEAVES'
+  - 'DARK_OAK_LEAVES'
+  - 'MANGROVE_LEAVES'
+  - 'CHERRY_LEAVES'
+
+auto-plant-saplings:
+  - 'OAK_SAPLING'
+  - 'SPRUCE_SAPLING'
+  - 'BIRCH_SAPLING'
+  - 'JUNGLE_SAPLING'
+  - 'ACACIA_SAPLING'
+  - 'DARK_OAK_SAPLING'
+  - 'MANGROVE_PROPAGULE'
+  - 'CHERRY_SAPLING'
+
+sapling-ground-materials:
+  - 'DIRT'
+  - 'GRASS_BLOCK'
+  - 'MUD'
+  - 'MOSS_BLOCK'
+  - 'PODZOL'
+  - 'MYCELIUM'
+  - 'COARSE_DIRT'

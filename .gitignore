@@ -6,14 +6,19 @@
 !docker-compose.yml
 !.gitignore
 
-!data
-!plugins
+
 
 # server config
+!data
 !data/whitelist.json
 !data/server.properties
 
+
+# plugins
+!plugins
+
 # Essentials
+!plugins/Essentials
 !plugins/Essentials/config.yml
 !plugins/Essentials/custom_items.yml
 !plugins/Essentials/items.yml
@@ -22,12 +27,15 @@
 !plugins/Essentials/tpr.yml
 
 # LuckPerms
+!plugins/LuckPerms
 !plugins/LuckPerms/config.yml
 
 # MiniMOTD
+!plugins/MiniMOTD
 !plugins/MiniMOTD/main.conf
 !plugins/MiniMOTD/plugin_settings.conf
 
 # TreeCuter
+!plugins/TreeCuter
 !plugins/TreeCuter/config.yml
 
