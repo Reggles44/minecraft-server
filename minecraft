@@ -23,6 +23,11 @@ function stop {
     docker-compose down --rmi all --remove-orphans
 }
 
+function restart {
+  stop
+  start
+}
+
 function attach {
     echo "Attaching to Minecraft..."
     echo "Ctrl-C stops minecraft and exits"
