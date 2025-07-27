@@ -21,6 +21,7 @@
 !data/plugins/MiniMOTD
 !data/plugins/MiniMOTD/main.conf
 !data/plugins/MiniMOTD/plugin_settings.conf
+!data/plugins/MiniMOTD/icons
 !data/plugins/MiniMOTD/icons/*
 !data/plugins/TreeCuter
 !data/plugins/TreeCuter/config.yml
