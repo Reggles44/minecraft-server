@@ -3,6 +3,7 @@
 
 # but...
 !docker-compose.yaml
+!minecraft
 !.gitignore
 
 # server config
