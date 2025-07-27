@@ -11,6 +11,22 @@
 !/data/whitelist.json
 !/data/server.properties
 
-# plugins
-!/plugins/*
+# Essentials
+!plugins/Essentials/config.yml
+!plugins/Essentials/custom_items.yml
+!plugins/Essentials/items.yml
+!plugins/Essentials/kits.yml
+!plugins/Essentials/motd.yml
+!plugins/Essentials/tpr.yml
+!plugins/Essentials/tpr.yml
+
+# LuckPerms
+!plugins/LuckPerms/config.yml
+
+# MiniMOTD
+!plugins/MiniMOTD/main.conf
+!plugins/MiniMOTD/plugin_settings.conf
+
+# TreeCuter
+!plugins/TreeCuter/config.yml
 
