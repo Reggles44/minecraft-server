@@ -1,2 +1,14 @@
-data/
-backup.tar.gz
+# Ignore everything
+*
+
+# but...
+.gitignore
+docker-compose.yaml
+
+# server config
+data/eula.txt
+data/server.properties
+data/whitelist.json
+
+plugins/*
+# plugins
